@@ -27,12 +27,13 @@ public class Teacher {
     }
 
     public void printTeacherStatus() {
-        System.out.println(String.format("老师：%s\n学生：", name));
+        System.out.print(String.format("老师：%s\n学生：", name));
         for (int i = 0; i < studentArrayList.size(); i++) {
             Student student = studentArrayList.get(i);
             String studentName = student.getName();
             int studentGrade = student.getGrade();
             System.out.print(String.format("（%s，%d分）", studentName, studentGrade));
         }
+        System.out.println();
     }
 }
